@@ -254,7 +254,6 @@ const handlePlantsClick = (e) => {
 
   const handleAddToCart = (product) => {
     dispatch(addItem(product));
-    //console.log('dispatched');
     setAddedToCart((prevState) => ({
        ...prevState,
        [product.name]: true, // Set the product name as key and value as true to indicate it's added to cart
